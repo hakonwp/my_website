@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Hakon Petermann"
-    subtitle = "Welcome to my portfoilio website"
+    subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -67,14 +67,14 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
+#    [[params.navigation.button1]]
+#      name = "Get Started"
+#      url = "blogs"
 
     # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
+#    [[params.navigation.button2]]
+#      name = "Log In"
+#      url = "#"
 
 
   # Banner section
@@ -92,16 +92,16 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "LinkedIn"
-      subtitle = "See my resume"
+      title = "About me"
+      subtitle = "A short bio"
       image = "pic01.jpg"
-      url = "https://www.linkedin.com/in/hakon-petermann/"
+      url = "blogs/about_me"
 
     [[params.tiles.showcase]]
-      title = "Tempus"
-      subtitle = "Feugiat Amet Tempus"
+      title = "Alcohol country analysis"
+      subtitle = "Analysis of top country drinkers by .."
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "blogs/alcohol"
 
     [[params.tiles.showcase]]
       title = "Magna"
@@ -189,33 +189,33 @@ disqusShortname = ""
     enable = true
     copyright = "Company Name"
 
-    # Uses font awesome icons
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      url= "https://www.twitter.com"
-      label = "Twitter"
-
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      url= "https://www.facebook.com"
-      label = "Facebook"
-
-    [[params.footer.social]]
-      icon = "fa-instagram"
-      url= "https://www.instagram.com"
-      label = "Instagram"
-    
-    [[params.footer.social]]
-      icon = "fa-github"
-      url= "https://www.github.com"
-      label = "GitHub"
-
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
+      url= "https://www.linkedin.com/in/hakon-petermann/"
       label = "LinkedIn"
 
-    [[params.footer.quicklinks]]
-      text = "Design: "
-      url= "https://www.html5up.net"
-      alt = "HTML5 UP"
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://www.github.com/hakonwp"
+      label = "GitHub"
+
+    # Uses font awesome icons
+#    [[params.footer.social]]
+#      icon = "fa-twitter"
+#      url= "https://www.twitter.com"
+#      label = "Twitter"
+
+#    [[params.footer.social]]
+#      icon = "fa-facebook"
+#      url= "https://www.facebook.com"
+#      label = "Facebook"
+
+#    [[params.footer.social]]
+#      icon = "fa-instagram"
+#      url= "https://www.instagram.com"
+#      label = "Instagram"
+    
+#    [[params.footer.quicklinks]]
+#      text = "Design: "
+#      url= "https://www.html5up.net"
+#      alt = "HTML5 UP"

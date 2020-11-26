@@ -1,0 +1,55 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T22:26:13-05:00"
+description: Foobar
+draft: false
+image: pic08.jpg
+keywords: ""
+slug: about_me
+title: About me
+---
+
+
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(gapminder)  # gapminder dataset
+library(here)
+```
+
+> Please delete all the intro teXt I wrote from line 22 to line 69 and start writing your short biography after this blockquote.
+
+# Jack of all trades, master of some
+This is what my self-titled biography would be called.
+
+My **background** is in
+
+* Electronic & electrical engineering
+* Finance
+* Sales
+* Operations
+
+and my **passions** include
+
+* Film
+* Road cycling
+* Underwater cave diving
+* Mountain trail walking
+* Travel
+* Philosophy, history & psychology
+* Opera & ballet
+* Basketball
+* Squash
+
+As one can see, the span of my knowledge and interests is _relatively_ wide. While I cannot be a master of all, I am strong in matters of technology, finance, and film, and the rest I feel at least very comfortable with.
+
+In fact, I even have a list of favourite films of all time which can be found [here](https://boxd.it/11A8s).
+
+With all I have learned in my life, I feel that the Socratic paradox could not be more true:
+
+> I know that I know nothing
+
+Sincerely,
+Hakon Wulf Petermann Rueda\
+![ESMT Logo](https://clubs.esmt.berlin/wp-content/uploads/2019/03/ESMT-Logo-Final-NEU_Farbe-Solo-300x148.png)

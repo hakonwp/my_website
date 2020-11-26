@@ -1,0 +1,472 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T22:26:13-05:00"
+description: Foobar
+draft: false
+image: pic08.jpg
+keywords: ""
+slug: alcohol
+title: Who drinks the most
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="where-do-people-drink-the-most-beer-wine-and-spirits" class="section level1">
+<h1>Where Do People Drink The Most Beer, Wine And Spirits?</h1>
+<pre class="r"><code>library(fivethirtyeight)
+data(drinks)</code></pre>
+<p>What are the variable types? Any missing values we should worry about?
+Variable types are chr (character), int (integer), and dbl (double).</p>
+<pre class="r"><code>glimpse(drinks)</code></pre>
+<pre><code>## Rows: 193
+## Columns: 5
+## $ country                      &lt;chr&gt; &quot;Afghanistan&quot;, &quot;Albania&quot;, &quot;Algeria&quot;, &quot;...
+## $ beer_servings                &lt;int&gt; 0, 89, 25, 245, 217, 102, 193, 21, 261...
+## $ spirit_servings              &lt;int&gt; 0, 132, 0, 138, 57, 128, 25, 179, 72, ...
+## $ wine_servings                &lt;int&gt; 0, 54, 14, 312, 45, 45, 221, 11, 212, ...
+## $ total_litres_of_pure_alcohol &lt;dbl&gt; 0.0, 4.9, 0.7, 12.4, 5.9, 4.9, 8.3, 3....</code></pre>
+<pre class="r"><code>skimr::skim(drinks)</code></pre>
+<table style='width: auto;'
+        class='table table-condensed'>
+<caption>
+(#tab:glimpse_skim_data)Data summary
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Name
+</td>
+<td style="text-align:left;">
+drinks
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Number of rows
+</td>
+<td style="text-align:left;">
+193
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Number of columns
+</td>
+<td style="text-align:left;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+_______________________
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Column type frequency:
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:left;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+________________________
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Group variables
+</td>
+<td style="text-align:left;">
+None
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+skim_variable
+</th>
+<th style="text-align:right;">
+n_missing
+</th>
+<th style="text-align:right;">
+complete_rate
+</th>
+<th style="text-align:right;">
+min
+</th>
+<th style="text-align:right;">
+max
+</th>
+<th style="text-align:right;">
+empty
+</th>
+<th style="text-align:right;">
+n_unique
+</th>
+<th style="text-align:right;">
+whitespace
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+country
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+193
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+skim_variable
+</th>
+<th style="text-align:right;">
+n_missing
+</th>
+<th style="text-align:right;">
+complete_rate
+</th>
+<th style="text-align:right;">
+mean
+</th>
+<th style="text-align:right;">
+sd
+</th>
+<th style="text-align:right;">
+p0
+</th>
+<th style="text-align:right;">
+p25
+</th>
+<th style="text-align:right;">
+p50
+</th>
+<th style="text-align:right;">
+p75
+</th>
+<th style="text-align:right;">
+p100
+</th>
+<th style="text-align:left;">
+hist
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+beer_servings
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+106.16
+</td>
+<td style="text-align:right;">
+101.14
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+20.0
+</td>
+<td style="text-align:right;">
+76.0
+</td>
+<td style="text-align:right;">
+188.0
+</td>
+<td style="text-align:right;">
+376.0
+</td>
+<td style="text-align:left;">
+&lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2582&gt;&lt;U+2582&gt;&lt;U+2581&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+spirit_servings
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+80.99
+</td>
+<td style="text-align:right;">
+88.28
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4.0
+</td>
+<td style="text-align:right;">
+56.0
+</td>
+<td style="text-align:right;">
+128.0
+</td>
+<td style="text-align:right;">
+438.0
+</td>
+<td style="text-align:left;">
+&lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wine_servings
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+49.45
+</td>
+<td style="text-align:right;">
+79.70
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+8.0
+</td>
+<td style="text-align:right;">
+59.0
+</td>
+<td style="text-align:right;">
+370.0
+</td>
+<td style="text-align:left;">
+&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+total_litres_of_pure_alcohol
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4.72
+</td>
+<td style="text-align:right;">
+3.77
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1.3
+</td>
+<td style="text-align:right;">
+4.2
+</td>
+<td style="text-align:right;">
+7.2
+</td>
+<td style="text-align:right;">
+14.4
+</td>
+<td style="text-align:left;">
+&lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2585&gt;&lt;U+2583&gt;&lt;U+2581&gt;
+</td>
+</tr>
+</tbody>
+</table>
+<p>Make a plot that shows the top 25 beer consuming countries</p>
+<pre class="r"><code>beer_df &lt;- drinks %&gt;% 
+  select(country, beer_servings) %&gt;% 
+  slice_max(beer_servings, n=25) %&gt;% 
+  mutate(colour = ifelse(country == &quot;Germany&quot; | country == &quot;Spain&quot;, TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish
+
+mean_beer &lt;- beer_df %&gt;% 
+  summarise(mean_beer = mean(beer_servings)) %&gt;% 
+  pull()
+
+my_colours &lt;- c(&quot;#a9a9a9&quot;, &quot;#ffd700&quot;)
+
+top25BeerPlot &lt;- ggplot(beer_df, aes(y = reorder(country, beer_servings), x  = beer_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 8) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = &quot;Top 25 beer consumers worldwide&quot;,
+    subtitle = &quot;You&#39;ll never guess who tops the list!&quot;,
+    x = &quot;Number of standard servings&quot;,
+    y = &quot;Country&quot;,
+    caption = &quot;(values are per capita)&quot;
+  ) + #adding labels
+  geom_vline(xintercept = mean_beer) + #add vertical mean line
+  theme(legend.position = &quot;none&quot;) + #remove legend
+  NULL
+
+top25BeerPlot</code></pre>
+<p><img src="/blogs/alcohol_files/figure-html/beer_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p>Make a plot that shows the top 25 wine consuming countries</p>
+<pre class="r"><code>wine_df &lt;- drinks %&gt;% 
+  select(country, wine_servings) %&gt;% 
+  slice_max(wine_servings, n=25) %&gt;% 
+  mutate(colour = ifelse(country == &quot;Germany&quot; | country == &quot;Spain&quot; | country == &quot;France&quot; | country == &quot;Italy&quot;, TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish, and others of interest
+
+spain_df &lt;- drinks %&gt;% 
+  select(country, wine_servings) %&gt;% 
+  mutate(colour = ifelse(country == &quot;Germany&quot; | country == &quot;Spain&quot;, TRUE, FALSE)) %&gt;% 
+  filter(country == &quot;Spain&quot;)
+
+wine_df_withSpain &lt;- rbind(wine_df, spain_df)
+
+mean_wine &lt;- wine_df %&gt;% #mean intentionally calculated using wine_df, because using wine_df_withSpain would skew results
+  summarise(mean_wine = mean(wine_servings)) %&gt;% 
+  pull()
+
+my_colours &lt;- c(&quot;#a9a9a9&quot;, &quot;#dc2502&quot;)
+
+top25WinePlot &lt;- ggplot(wine_df_withSpain, aes(y = reorder(country, wine_servings), x  = wine_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 5) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = &quot;Top 25 wine consumers worldwide (and Spain)&quot;,
+    subtitle = &quot;Note: Spain is not #26, it has simply been added for interest!&quot;,
+    x = &quot;Number of standard servings&quot;,
+    y = &quot;Country&quot;,
+    caption = &quot;(values are per capita)&quot;
+  ) + #adding labels
+  geom_vline(xintercept = mean_wine) + #add vertical mean line
+  theme(legend.position = &quot;none&quot;) + #remove legend
+  NULL
+
+top25WinePlot</code></pre>
+<p><img src="/blogs/alcohol_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p>Finally, make a plot that shows the top 25 spirit consuming countries</p>
+<pre class="r"><code>spirit_df &lt;- drinks %&gt;% 
+  select(country, spirit_servings) %&gt;% 
+  slice_max(spirit_servings, n=25) %&gt;% 
+  mutate(colour = ifelse(country == &quot;Germany&quot; | country == &quot;Spain&quot;| country == &quot;Russian Federation&quot; | country == &quot;Mexico&quot;, TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish, Russia because of the vodka-drinking reputation, and the same for Mexico and tequila
+
+spain_df &lt;- drinks %&gt;% 
+  select(country, spirit_servings) %&gt;% 
+  mutate(colour = ifelse(country == &quot;Spain&quot; | country == &quot;Mexico&quot;, TRUE, FALSE)) %&gt;% 
+  filter(country == &quot;Spain&quot; | country == &quot;Mexico&quot;)
+
+spirit_df_withSpain &lt;- rbind(spirit_df, spain_df)
+
+mean_spirit &lt;- spirit_df %&gt;% #mean intentionally calculated using wine_df, because using wine_df_withSpain would skew results
+  summarise(mean_spirit = mean(spirit_servings)) %&gt;% 
+  pull()
+
+my_colours &lt;- c(&quot;#a9a9a9&quot;, &quot;#16c7ba&quot;)
+
+top25SpiritPlot &lt;- ggplot(spirit_df_withSpain, aes(y = reorder(country, spirit_servings), x  = spirit_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 5) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = &quot;Top 25 spirit consumers worldwide (and Spain)&quot;,
+    subtitle = &quot;Note: Spain is not #26, it has simply been added for interest!&quot;,
+    x = &quot;Number of standard servings&quot;,
+    y = &quot;Country&quot;,
+    caption = &quot;(values are per capita)&quot;
+  ) + #adding labels
+  geom_vline(xintercept = mean_spirit) + #add vertical mean line
+  theme(legend.position = &quot;none&quot;) + #remove legend
+  NULL
+
+top25SpiritPlot</code></pre>
+<p><img src="/blogs/alcohol_files/figure-html/spirit_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p>What can you infer from these plots?</p>
+<blockquote>
+<p>TYPE YOUR ANSWER AFTER (AND OUTSIDE!) THIS BLOCKQUOTE.</p>
+</blockquote>
+<p>My conclusion is that it seems that reputations are earned for a reason. Germany ranks 4th in beer consumption, France comes 1st for wine consumption, and Russia is 3rd for spirit consumption. I wonder what spirit that could be…</p>
+<p>Also, an observation that countries for the most part don’t repeatedly appear in the top 25 for multiple lists. The values here are per capita, and for a country to appear twice means that they drink a lot. For example Germany with both 346 servings of beer (per person, per year) AND 175 servings of wine (per person, per year). Impressive, or worrying?</p>
+<p>Surprises:
+- Spain not in top 25 for wine
+- Mexico not in top 25 for spirits, in fact its consumption is relatively low (rank #89 only)</p>
+</div>
