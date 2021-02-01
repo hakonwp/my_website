@@ -54,7 +54,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Hakon Petermann Rueda"
-    subtitle = "Welcome to my portfolio website"
+    # subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -69,10 +69,14 @@ disqusShortname = ""
 
     [[params.navigation.links]]
       name = "Present - Business"
-      url = "blogs/ipsum"
+      url = "present"
+      
+    [[params.navigation.links]]
+      name = "Present - Business"
+      url = "present/presenttest"
 
    [[params.navigation.links]]
-      name = "People"
+      name = "Future - People"
       url = "elements.html"
 
     # Add custom links here by uncommenting code below. To remove links just delete
