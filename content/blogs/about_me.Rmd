@@ -20,7 +20,7 @@ library(here)
 
 > Please delete all the intro teXt I wrote from line 22 to line 69 and start writing your short biography after this blockquote.
 
-# Jack of all trades, master of some
+# Jack of all trades, master of many
 This is what my self-titled biography would be called.
 
 My **background** is in

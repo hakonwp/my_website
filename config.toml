@@ -4,6 +4,22 @@ languageCode = "en-us"
 title = "Portfolio website for Hakon Petermann"
 theme = "forty"
 
+# git add -A
+# git commit -m "foobar"
+# git pull
+# git push
+
+# https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+#https://github.com/kostis-christodoulou/ca09.mfa2021
+#https://cjbcoding.netlify.app/
+#https://ingemannportfolio.netlify.app/
+#https://agnieszkaprawdaportfolio.netlify.app/
+#https://alex-pracht.netlify.app/
+#https://konstantinpinkl.netlify.app/blogs/blog6/
+#https://konstantinpinkl.netlify.app/
+#https://mariecordes.netlify.app/
+
+
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
