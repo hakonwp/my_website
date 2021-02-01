@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://hakonp.netlify.app/"
 languageCode = "en-us"
-title = "Portfolio website for Hakon Petermann"
+title = "Portfolio website for Hakon Petermann Rueda"
 theme = "forty"
 
 # git add -A
@@ -53,7 +53,7 @@ disqusShortname = ""
 
   # Navigation Section
   [params.navigation]
-    title = "Hakon Petermann"
+    title = "Hakon Petermann Rueda"
     subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
@@ -64,16 +64,16 @@ disqusShortname = ""
       url = "#"
 
     [[params.navigation.links]]
-      name = "Blogs"
+      name = "Past - Engineering"
       url = "blogs"
 
-#    [[params.navigation.links]]
-#      name = "Generic Blog"
-#      url = "blogs/ipsum"
+    [[params.navigation.links]]
+      name = "Present - Business"
+      url = "blogs/ipsum"
 
-#    [[params.navigation.links]]
-#      name = "Elements"
-#      url = "elements.html"
+   [[params.navigation.links]]
+      name = "People"
+      url = "elements.html"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -83,14 +83,14 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 1
-#    [[params.navigation.button1]]
-#      name = "Get Started"
-#      url = "blogs"
+    [[params.navigation.button1]]
+      name = "Get Started"
+      url = "blogs"
 
     # Button Style 2
-#    [[params.navigation.button2]]
-#      name = "Log In"
-#      url = "#"
+    [[params.navigation.button2]]
+      name = "Log In"
+      url = "#"
 
 
   # Banner section
