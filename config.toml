@@ -31,7 +31,7 @@ theme = "forty"
 
   # Navigation Section
   [params.navigation]
-    title = "Hakon Petermann Rueda1"
+    title = "Hakon Petermann Ruedaa"
     # subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
@@ -135,7 +135,7 @@ theme = "forty"
 
   # Section Type Two
   [params.two]
-    enable = false
+    enable = true
     title = "There you have it"
     subtitle = "This site should give you a pretty rounded idea of who I am. 
     I try here to give a more rounded idea of my life than one would see only 
@@ -145,8 +145,7 @@ theme = "forty"
     please feel free to connect with me there, or to use the form below which 
     will go straight ot my inbox."
     buttonText = "Back to top"
-    #url = "blogs"
-
+    url = "blogs"
 
   # Contact section
   [params.contact]
