@@ -163,7 +163,7 @@ theme = "forty"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-    # formEmail = "example@domain.com"
+    formEmail = "hakon.petermann@mim2020.esmt.org"
 
     # Contact Section
     # You can add multiple emails, phone numbers, or addresses
