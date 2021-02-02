@@ -4,28 +4,6 @@ languageCode = "en-us"
 title = "Portfolio website for Hakon Petermann Rueda"
 theme = "forty"
 
-# git add -A
-# git commit -m "foobar"
-# git pull
-# git push
-
-# https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
-#https://github.com/kostis-christodoulou/ca09.mfa2021
-#https://cjbcoding.netlify.app/
-#https://ingemannportfolio.netlify.app/
-#https://agnieszkaprawdaportfolio.netlify.app/
-#https://alex-pracht.netlify.app/
-#https://konstantinpinkl.netlify.app/blogs/blog6/
-#https://konstantinpinkl.netlify.app/
-#https://mariecordes.netlify.app/
-
-
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-
-# Enter your disqus shortname to enable comments
-disqusShortname = ""
-
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
   # To create multi-line text in strings use the """example Text""" format
@@ -36,7 +14,7 @@ disqusShortname = ""
 
   # Provide your metadata here.
   name = "Hakon"
-  description = "Young, ambitious, and passionate about creativity!"
+  description = "Young, ambitious, and living to grow."
 
   # Link custom assets relative to /static
   custom_css = []
@@ -192,7 +170,7 @@ disqusShortname = ""
     # by copying the corresponding map with frontmatter code.
     [[params.contact.email]]
     title = "Email"
-    email = "example@domain.com"
+    email = "hakon.petermann@mim2020.esmt.org"
 
     [[params.contact.phone]]
     title = "Phone"
@@ -207,7 +185,7 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Company Name"
+    copyright = "HPR 2021"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
