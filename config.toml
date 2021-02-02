@@ -137,13 +137,7 @@ theme = "forty"
   [params.two]
     enable = true
     title = "There you have it"
-    subtitle = "This site should give you a pretty rounded idea of who I am. 
-    I try here to give a more rounded idea of my life than one would see only 
-    on my LinkedIn or even my Instagram; sharing my interests, ideas, and previous work.
-    At the bottom of this page you have a 
-    button to my LinkedIn, if you for any reason want to connect,
-    please feel free to connect with me there, or to use the form below which 
-    will go straight ot my inbox."
+    subtitle = "This site should give you a pretty rounded idea of who I am. I try here to give a more rounded idea of my life than one would see only on my LinkedIn or even my Instagram; sharing my interests, ideas, and previous work. At the bottom of this page you have a button to my LinkedIn, if you for any reason want to connect, please feel free to connect with me there, or to use the form below which will go straight ot my inbox."
     buttonText = "Back to top"
     url = "blogs"
 
