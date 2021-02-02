@@ -135,7 +135,7 @@ theme = "forty"
 
   # Section Type Two
   [params.two]
-    enable = true
+    enable = false
     title = "There you have it"
     subtitle = "This site should give you a pretty rounded idea of who I am. 
     I try here to give a more rounded idea of my life than one would see only 
@@ -145,7 +145,7 @@ theme = "forty"
     please feel free to connect with me there, or to use the form below which 
     will go straight ot my inbox."
     buttonText = "Back to top"
-    url = "blogs"
+    #url = "blogs"
 
 
   # Contact section
