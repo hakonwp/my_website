@@ -163,14 +163,14 @@ theme = "forty"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-    formEmail = "hakon.petermann@mim2020.esmt.org"
+    #  formEmail = "hakon.peterxxxx@mim2020.esmt.org"
 
     # Contact Section
     # You can add multiple emails, phone numbers, or addresses
     # by copying the corresponding map with frontmatter code.
     [[params.contact.email]]
     title = "Email"
-    email = "hakon.petermann@mim2020.esmt.org"
+    email = "hakon.pxxxn@mim2020.esmt.org"
 
     [[params.contact.phone]]
     title = "Phone"
