@@ -34,12 +34,15 @@ To give a little summary of each stage they go something like this:
 ## Past
 
 ### Career
+
 * Engineering
   
 ### Studies
+
 * Electrical & Electronic Engineering
   
 ### Life
+
 * Film
 * Diving
 * Love of nature
@@ -50,10 +53,13 @@ To give a little summary of each stage they go something like this:
 * Squash
 
 ## Present
+
 ### Career
+
 * Business
   
 ### Studies
+
 * CFA
 * Sales role
 * Operations role(s)
@@ -61,6 +67,7 @@ To give a little summary of each stage they go something like this:
 * PMP
 
 ### Life
+
 * Road cycling
 * Books I've read
 * Holidays to Europe and life in Europe
@@ -70,13 +77,17 @@ To give a little summary of each stage they go something like this:
 
   
 ## Future
+
 ### Career
+
 * People (developing as a manager)
   
 ### Studies
+
 * Business school
   
 ### Life
+
 * Books
 * Experiences at school
 * Role models of leaders
