@@ -31,7 +31,7 @@ theme = "forty"
 
   # Navigation Section
   [params.navigation]
-    title = "Hakon Petermann Ruedaa"
+    title = "Hakon Petermann Rueda1"
     # subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
@@ -91,6 +91,12 @@ theme = "forty"
       subtitle = "A short bio"
       image = "pic01.jpg"
       url = "blogs/about_me"
+      
+    [[params.tiles.showcase]]
+      title = "Blogs"
+      subtitle = "Should be the blogs folder"
+      image = "pic01.jpg"
+      url = "blogs"
 
     #[[params.tiles.showcase]]
      # title = "Alcohol country analysis"
