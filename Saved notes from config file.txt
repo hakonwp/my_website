@@ -22,3 +22,59 @@ googleAnalytics = ""
 disqusShortname = ""
 
 
+-----
+
+Past:
+  Career:
+  - Engineering
+  
+  Studies:
+  - Electrical & Electronic Engineering
+  
+  Life:
+  - Film
+  - Underwater cave diving
+  - Mountain trail walking
+  - Travel
+  - Philosophy, history & psychology
+  - Opera & ballet
+  - Basketball
+  - Squash
+  
+  
+Present:
+  Career:
+  - Business
+  
+  Studies:
+  - CFA
+  - Sales role
+  - Operations role(s)
+  - Business school
+
+  Life:
+  - Road cycling
+  - Books I've read
+  - Holidays to Europe and life in Europe
+  - Podcasts
+  - Relationship w/ Meg?
+  
+  
+Future:
+  Career:
+  - People (developing as a manager)
+  
+  Studies:
+  - Business school
+  
+  Life:
+  - Books
+  - Experiences at school
+  - Role models of leaders
+  
+  
+  -----
+  
+  
+  How to add esmt logo:
+![ESMT Logo](https://clubs.esmt.berlin/wp-content/uploads/2019/03/ESMT-Logo-Final-NEU_Farbe-Solo-300x148.png)

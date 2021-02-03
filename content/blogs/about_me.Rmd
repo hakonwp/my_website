@@ -19,36 +19,75 @@ library(here)
 ```
 
 
-# Jack of all trades, master of many
-This is what my self-titled biography would be called.
+# My story, still being written
 
-My **background** is in
+You've probably already noticed that I've structured this website in three main parts:
 
-* Electronic & electrical engineering
-* Finance
-* Sales
-* Operations
+* The **past** - Engineering
+* The **present** - Business
+* The **future** - People
 
-and my **passions** include
+This, I've realised, is the best way to tell my story. You will notice the words next to the phases of my life ("Engineering", "Business", and "People") too, these are the single-word characterizations of my career in its respective phases. I use my career as the needle to thread this story (I am creating this website in business school after all), I will however use this site also as an opportunity to write abut my life, my interests, and my thoughts.
 
-* Film
-* Road cycling
-* Underwater cave diving
-* Mountain trail walking
-* Travel
-* Philosophy, history & psychology
-* Opera & ballet
-* Basketball
-* Squash
+To give a little summary of each stage they go something like this:
 
-As one can see, the span of my knowledge and interests is _relatively_ wide. While I cannot be a master of all, I am strong in matters of technology, finance, and film, and the rest I feel at least very comfortable with.
+## Past
+  ### Career
+  * Engineering
+  
+  ### Studies
+  * Electrical & Electronic Engineering
+  
+  ### Life
+  * Film
+  * Diving
+  * Love of nature
+  * Travel
+  * Philosophy, history & psychology
+  * Opera & ballet
+  * Basketball
+  * Squash
+
+## Present
+  ### Career
+  * Business
+  
+  ### Studies
+  * CFA
+  * Sales role
+  * Operations role(s)
+  * Business school
+  * PMP
+
+  ### Life
+  * Road cycling
+  * Books I've read
+  * Holidays to Europe and life in Europe
+  * Podcasts
+  * Relationship w/ Meg?
+  * Geopolitics + macroeconomics
+
+  
+## Future
+  ### Career
+  * People (developing as a manager)
+  
+  ### Studies
+  * Business school
+  
+  ### Life
+  * Books
+  * Experiences at school
+  * Role models of leaders
+
+
+As one can see, I have a _relatively_ broad span of knowledge and interests. This breath is how I have enjoyed living my life so far and plan to continue to do so as I continue to grow along my life's path. Having learned what I have and experienced everything I have, this breadth and desire for development makes all the sense in the world. My hope is to paint a clear picture of this history and to communicate just how it makes so much sense.
 
 In fact, I even have a list of favourite films of all time which can be found [here](https://boxd.it/11A8s).
 
-With all I have learned in my life, I feel that the Socratic paradox could not be more true:
+But as much as I want to share everythng about me, I want to avoid coming accross as a narcissist. In the face of all I have learned, and the priveledge I have had to do so, I hope to stay humble and appreciative through it all. This humbleness comes from realising my position of priviledge, and also from realising just how much more there (always) is to learn. If there is one hting I feel more certain about each day I learn more, it is that Socrates was right when he famously said:
 
 > I know that I know nothing
 
-Sincerely,
-Hakon Wulf Petermann Rueda\
-![ESMT Logo](https://clubs.esmt.berlin/wp-content/uploads/2019/03/ESMT-Logo-Final-NEU_Farbe-Solo-300x148.png)
+Sincerely,\
+Hakon Wulf Petermann Rueda
