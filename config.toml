@@ -31,7 +31,7 @@ theme = "forty"
 
   # Navigation Section
   [params.navigation]
-    title = "Hakon Petermann Rueda2"
+    title = "Hakon Petermann Rueda3"
     # subtitle = "Welcome to my portfolio website"
     menu = "Menu"
     # Optional logo as brand stored in img/
