@@ -84,3 +84,17 @@ Future:
 
 In fact, I even have a list of favourite films of all time which can be found [here](https://boxd.it/11A8s).
 
+----
+
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Past</b></td>
+    <td><b style="font-size:30px">Present</b></td>
+    <td><b style="font-size:30px">Future</b></td>
+ </tr>
+ <tr>
+    <td><p>test</p></td>
+    <td>Lorem ipsum2...</td>
+    <td>Lorem ipsum3...</td>
+ </tr>
+</table>
