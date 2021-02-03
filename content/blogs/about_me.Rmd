@@ -5,7 +5,7 @@ categories:
 date: "2017-10-31T22:26:13-05:00"
 description: Foobar
 draft: false
-image: pic08.jpg
+#image: pic08.jpg
 keywords: ""
 slug: about_me
 title: About me
@@ -33,59 +33,56 @@ To give a little summary of each stage they go something like this:
 
 ## Past
 
-  ### Career
+### Career
+* Engineering
   
-  * Engineering
+### Studies
+* Electrical & Electronic Engineering
   
-  ### Studies
-  * Electrical & Electronic Engineering
-  
-  ### Life
-  * Film
-  * Diving
-  * Love of nature
-  * Travel
-  * Philosophy, history & psychology
-  * Opera & ballet
-  * Basketball
-  * Squash
+### Life
+* Film
+* Diving
+* Love of nature
+* Travel
+* Philosophy, history & psychology
+* Opera & ballet
+* Basketball
+* Squash
 
 ## Present
-  ### Career
-  * Business
+### Career
+* Business
   
-  ### Studies
-  * CFA
-  * Sales role
-  * Operations role(s)
-  * Business school
-  * PMP
+### Studies
+* CFA
+* Sales role
+* Operations role(s)
+* Business school
+* PMP
 
-  ### Life
-  * Road cycling
-  * Books I've read
-  * Holidays to Europe and life in Europe
-  * Podcasts
-  * Relationship w/ Meg?
-  * Geopolitics + macroeconomics
+### Life
+* Road cycling
+* Books I've read
+* Holidays to Europe and life in Europe
+* Podcasts
+* Relationship w/ Meg?
+* Geopolitics + macroeconomics
 
   
 ## Future
-  ### Career
-  * People (developing as a manager)
+### Career
+* People (developing as a manager)
   
-  ### Studies
-  * Business school
+### Studies
+* Business school
   
-  ### Life
-  * Books
-  * Experiences at school
-  * Role models of leaders
+### Life
+* Books
+* Experiences at school
+* Role models of leaders
 
 
 As one can see, I have a _relatively_ broad span of knowledge and interests. This breath is how I have enjoyed living my life so far and plan to continue to do so as I continue to grow along my life's path. Having learned what I have and experienced everything I have, this breadth and desire for development makes all the sense in the world. My hope is to paint a clear picture of this history and to communicate just how it makes so much sense.
-
-In fact, I even have a list of favourite films of all time which can be found [here](https://boxd.it/11A8s).
 
 But as much as I want to share everythng about me, I want to avoid coming accross as a narcissist. In the face of all I have learned, and the priveledge I have had to do so, I hope to stay humble and appreciative through it all. This humbleness comes from realising my position of priviledge, and also from realising just how much more there (always) is to learn. If there is one hting I feel more certain about each day I learn more, it is that Socrates was right when he famously said:
 
