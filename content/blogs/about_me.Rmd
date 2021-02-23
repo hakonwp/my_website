@@ -18,7 +18,7 @@ library(here)
 ```
 
 
-# My story, still being written1
+# My story, still being written2
 
 You've probably already noticed that I've structured this website in three main parts:
 
