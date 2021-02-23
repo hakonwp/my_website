@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The present - Business on Portfolio website for Hakon Petermann Rueda</title>
+    <link>https://hakonp.netlify.app/present/</link>
+    <description>Recent content in The present - Business on Portfolio website for Hakon Petermann Rueda</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Oct 2017 22:27:21 -0500</lastBuildDate><atom:link href="https://hakonp.netlify.app/present/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tracer1</title>
+      <link>https://hakonp.netlify.app/present/presenttest/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>https://hakonp.netlify.app/present/presenttest/</guid>
+      <description>This would be the article I would want showing up when &amp;ldquo;Present&amp;rdquo; is navigated to.</description>
+    </item>
+    
+  </channel>
+</rss>

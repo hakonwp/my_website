@@ -1,0 +1,194 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T22:26:13-05:00"
+description: Foobar
+draft: false
+image: pic08.jpg
+keywords: ""
+slug: alcohol
+title: Who drinks the most
+---
+
+```{r, setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(fivethirtyeight)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(rvest)    # scrape websites
+library(purrr)  
+library(lubridate) #to handle dates
+library(ggrepel)
+library(knitr)
+library(kableExtra) # for nicer table formatting
+library(ggpubr)
+library(patchwork)
+library(scales)
+```
+
+
+# Where Do People Drink The Most Beer, Wine And Spirits?
+
+```{r, load_alcohol_data}
+library(fivethirtyeight)
+data(drinks)
+```
+
+What are the variable types? Any missing values we should worry about? 
+Variable types are chr (character), int (integer), and dbl (double).
+
+```{r glimpse_skim_data}
+glimpse(drinks)
+skimr::skim(drinks)
+```
+
+Make a plot that shows the top 25 beer consuming countries
+
+```{r beer_plot}
+beer_df <- drinks %>% 
+  select(country, beer_servings) %>% 
+  slice_max(beer_servings, n=25) %>% 
+  mutate(colour = ifelse(country == "Germany" | country == "Spain", TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish
+
+mean_beer <- beer_df %>% 
+  summarise(mean_beer = mean(beer_servings)) %>% 
+  pull()
+
+my_colours <- c("#a9a9a9", "#ffd700")
+
+top25BeerPlot <- ggplot(beer_df, aes(y = reorder(country, beer_servings), x  = beer_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 8) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = "Top 25 beer consumers worldwide",
+    subtitle = "You'll never guess who tops the list!",
+    x = "Number of standard servings",
+    y = "Country",
+    caption = "(values are per capita)"
+  ) + #adding labels
+  geom_vline(xintercept = mean_beer) + #add vertical mean line
+  theme(legend.position = "none") + #remove legend
+  NULL
+
+top25BeerPlot
+```
+
+Make a plot that shows the top 25 wine consuming countries
+
+```{r wine_plot}
+wine_df <- drinks %>% 
+  select(country, wine_servings) %>% 
+  slice_max(wine_servings, n=25) %>% 
+  mutate(colour = ifelse(country == "Germany" | country == "Spain" | country == "France" | country == "Italy", TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish, and others of interest
+
+spain_df <- drinks %>% 
+  select(country, wine_servings) %>% 
+  mutate(colour = ifelse(country == "Germany" | country == "Spain", TRUE, FALSE)) %>% 
+  filter(country == "Spain")
+
+wine_df_withSpain <- rbind(wine_df, spain_df)
+
+mean_wine <- wine_df %>% #mean intentionally calculated using wine_df, because using wine_df_withSpain would skew results
+  summarise(mean_wine = mean(wine_servings)) %>% 
+  pull()
+
+my_colours <- c("#a9a9a9", "#dc2502")
+
+top25WinePlot <- ggplot(wine_df_withSpain, aes(y = reorder(country, wine_servings), x  = wine_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 5) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = "Top 25 wine consumers worldwide (and Spain)",
+    subtitle = "Note: Spain is not #26, it has simply been added for interest!",
+    x = "Number of standard servings",
+    y = "Country",
+    caption = "(values are per capita)"
+  ) + #adding labels
+  geom_vline(xintercept = mean_wine) + #add vertical mean line
+  theme(legend.position = "none") + #remove legend
+  NULL
+
+top25WinePlot
+```
+
+Finally, make a plot that shows the top 25 spirit consuming countries
+```{r spirit_plot}
+
+spirit_df <- drinks %>% 
+  select(country, spirit_servings) %>% 
+  slice_max(spirit_servings, n=25) %>% 
+  mutate(colour = ifelse(country == "Germany" | country == "Spain"| country == "Russian Federation" | country == "Mexico", TRUE, FALSE))
+#highlighting Germany because we are here now, Spain because I am half Spanish, Russia because of the vodka-drinking reputation, and the same for Mexico and tequila
+
+spain_df <- drinks %>% 
+  select(country, spirit_servings) %>% 
+  mutate(colour = ifelse(country == "Spain" | country == "Mexico", TRUE, FALSE)) %>% 
+  filter(country == "Spain" | country == "Mexico")
+
+spirit_df_withSpain <- rbind(spirit_df, spain_df)
+
+mean_spirit <- spirit_df %>% #mean intentionally calculated using wine_df, because using wine_df_withSpain would skew results
+  summarise(mean_spirit = mean(spirit_servings)) %>% 
+  pull()
+
+my_colours <- c("#a9a9a9", "#16c7ba")
+
+top25SpiritPlot <- ggplot(spirit_df_withSpain, aes(y = reorder(country, spirit_servings), x  = spirit_servings, fill = colour)) +
+  geom_col() +
+  theme_wsj(base_size = 5) + #theme with reduced text size
+  scale_fill_manual(values = my_colours) + #using the colours of my choice instead of default red/blue (helps make my highlighted countries stand out)
+  labs(
+    title = "Top 25 spirit consumers worldwide (and Spain)",
+    subtitle = "Note: Spain is not #26, it has simply been added for interest!",
+    x = "Number of standard servings",
+    y = "Country",
+    caption = "(values are per capita)"
+  ) + #adding labels
+  geom_vline(xintercept = mean_spirit) + #add vertical mean line
+  theme(legend.position = "none") + #remove legend
+  NULL
+
+top25SpiritPlot
+
+```
+
+What can you infer from these plots?
+
+> TYPE YOUR ANSWER AFTER (AND OUTSIDE!) THIS BLOCKQUOTE.
+
+My conclusion is that it seems that reputations are earned for a reason. Germany ranks 4th in beer consumption, France comes 1st for wine consumption, and Russia is 3rd for spirit consumption. I wonder what spirit that could be...
+
+Also, an observation that countries for the most part don't repeatedly appear in the top 25 for multiple lists. The values here are per capita, and for a country to appear twice means that they drink a lot. For example Germany with both 346 servings of beer (per person, per year) AND 175 servings of wine (per person, per year). Impressive, or worrying?
+
+Surprises:
+- Spain not in top 25 for wine
+- Mexico not in top 25 for spirits, in fact its consumption is relatively low (rank #89 only)
+
