@@ -17,6 +17,16 @@
     </item>
     
     <item>
+      <title>About me</title>
+      <link>https://hakonp.netlify.app/blogs/about_me/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>https://hakonp.netlify.app/blogs/about_me/</guid>
+      <description>My story, still being written You’ve probably already noticed that I’ve structured this website in three main parts:
+ The past - Engineering The present - Business The future - People  This, I’ve realised, is the best way to tell my story. You will notice the words next to the phases of my life (“Engineering”, “Business”, and “People”) too, these are the single-word characterizations of my career in its respective phases.</description>
+    </item>
+    
+    <item>
       <title>Tempus</title>
       <link>https://hakonp.netlify.app/blogs/tempus/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
