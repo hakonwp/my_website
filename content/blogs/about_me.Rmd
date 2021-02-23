@@ -27,7 +27,7 @@ You've probably already noticed that I've structured this website in three main 
 * The **present** - Business
 * The **future** - People
 
-This, I've realised, is the best way to tell my story. You will notice the words next to the phases of my life ("Engineering", "Business", and "People") too, these are the single-word characterizations of my career in its respective phases. I use my career as the needle to thread this story (I am creating this website in business school after all), I will however use this site also as an opportunity to write abut my life, my interests, and my thoughts.
+This, I've realised, is the best way to tell my story. You will notice the words next to the phases of my life ("Engineering", "Business", and "People") too, these are the single-word characterizations of my career in its respective phases. I use my career as the needle to thread this story (I am creating this website in business school after all), I will however use this site as an opportunity to also write abut my life, my interests, and my thoughts.
 
 To give a little summary of each stage they go something like this:
 
@@ -54,19 +54,21 @@ To give a little summary of each stage they go something like this:
 * Career
     * Business
   
-* Studies
+* Studies/experience
     * CFA
-    * Sales role
-    * Operations role(s)
+    * Sales consultant
+    * Operations exposure at a FinTech Startup
     * Business school
-    * PMP
+    * Portfolio Management Program (PMP) - Analyst
+    * Leadership exposure
 
 * Life
     * Road cycling
-    * Books I've read
-    * Holidays to Europe and life in Europe
+    * Reading
+    * More movies of course!
+    * Living in and traveling around Europe
     * Podcasts
-    * Relationship w/ Meg?
+    * Adventures with Meg
     * Geopolitics + macroeconomics
 
 ## Future
@@ -76,15 +78,16 @@ To give a little summary of each stage they go something like this:
   
 * Studies
     * Business school
+    * Continuing to build on leadership experiences (Building High-Performance Teams, Club leadership, ILRT management, Class Representative)
   
 * Life
     * Books
     * Experiences at school
     * Role models of leaders
 
-As one can see, I have a _relatively_ broad span of knowledge and interests. This breath is how I have enjoyed living my life so far and plan to continue to do so as I continue to grow along life's path. Having learned what I have and experienced everything I have, this breadth and desire for development makes all the sense in the world. My hope is to paint a clear picture of this history and to communicate just how much sense it makes.
+As one can see, I have a _relatively_ broad span of knowledge and interests. This breadth is how I have enjoyed living my life so far and will continue to do so down life's path. Having learned what I have and experienced everything I have, this breadth and desire for development makes all the sense in the world. My hope is to paint a clear picture of this history and to communicate just how much sense it makes.
 
-But as much as I want to share everything about me, this is not the blog of a narcissist. In the face of all I have learned, and the privilege I have had to do so, I hope to stay humble and appreciative through it all. This humbleness comes from realising my position of privileged (there are a handful of people without whom I would not be where I am today), and also from realising just how much more there (always) is to learn. If there is one thing I feel more certain about each day I learn more, it is that Socrates was right when he (supposedly) famously said:
+But as much as I want to share everything about me, this is not the blog of a narcissist. In the face of all I have learned, and the privilege I have had to do so, I hope to stay humble and appreciative through it all. This humbleness comes from realizing my position of privileged (there are a handful of people without whom I would not be where I am today), and also from realizing just how much more there (always) is to learn. If there is one thing I feel more certain about each day I learn more, it is that Socrates was right when he supposedly said:
 
 > I know that I know nothing (The Socratic Paradox)
 
