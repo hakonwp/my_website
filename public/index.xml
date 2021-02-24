@@ -17,6 +17,26 @@
     </item>
     
     <item>
+      <title>About me</title>
+      <link>https://hakonp.netlify.app/blogs/about_me/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>https://hakonp.netlify.app/blogs/about_me/</guid>
+      <description>My story, still being written1234 You’ve probably already noticed that I’ve structured this website in three main parts:
+ The past - Engineering The present - Business The future - People  This, I’ve realised, is the best way to tell my story. You will notice the words next to the phases of my life (“Engineering”, “Business”, and “People”) too, these are the single-word characterizations of my career in its respective phases.</description>
+    </item>
+    
+    <item>
+      <title>Past Summary</title>
+      <link>https://hakonp.netlify.app/past/past_summary/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>https://hakonp.netlify.app/past/past_summary/</guid>
+      <description>My story, still being written The one-word characterization of this phase of my life is “engineering”. To be more specific I completed my Bachelor’s Degree in Electrical &amp;amp; Electronic Engineering. Just as you didn’t go straight form birth into university - I didn’t either.
+I was born in, and grew up in what I still to this day believe is the most beuatiful place in the world: Cape Town, South Africa.</description>
+    </item>
+    
+    <item>
       <title>Tempus</title>
       <link>https://hakonp.netlify.app/blogs/tempus/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
@@ -69,6 +89,17 @@ glimpse(drinks) ## Rows: 193 ## Columns: 5 ## $ country &amp;lt;chr&amp;gt; &amp
       
       <guid>https://hakonp.netlify.app/present/presenttest/</guid>
       <description>This would be the article I would want showing up when &amp;ldquo;Present&amp;rdquo; is navigated to.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://hakonp.netlify.app/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://hakonp.netlify.app/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
     </item>
     
   </channel>

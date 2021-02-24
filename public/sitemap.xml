@@ -20,6 +20,12 @@
     <loc>https://hakonp.netlify.app/present/</loc>
     <lastmod>2017-10-31T22:27:21-05:00</lastmod>
   </url><url>
+    <loc>https://hakonp.netlify.app/blogs/about_me/</loc>
+    <lastmod>2017-10-31T22:26:13-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/past/past_summary/</loc>
+    <lastmod>2017-10-31T22:26:13-05:00</lastmod>
+  </url><url>
     <loc>https://hakonp.netlify.app/blogs/tempus/</loc>
     <lastmod>2017-10-31T22:26:13-05:00</lastmod>
   </url><url>
@@ -39,7 +45,27 @@
     <lastmod>2017-10-31T21:28:43-05:00</lastmod>
   </url><url>
     <loc>https://hakonp.netlify.app/categories/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/post/2015-07-23-r-rmarkdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/tags/plot/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/post/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://hakonp.netlify.app/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url><url>
     <loc>https://hakonp.netlify.app/tags/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
 </urlset>
